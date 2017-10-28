@@ -1,0 +1,43 @@
+.notify-attention {
+    background: #fffbcc url('./icons/attention.png') 10px 9px no-repeat !important;
+    border: 1px solid rgb(230, 219, 85) !important;
+    border-color:rgba(230, 219, 85, 0.8) !important;
+    -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(230, 219, 85, 0.6) !important;
+    -moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(230, 219, 85, 0.6) !important;
+    box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(230, 219, 85, 0.6) !important;        
+    color: #666452 !important;
+    padding-left:36px !important;
+}
+
+.notify-information {
+    background: #dbe3ff url('./icons/information.png') 10px 9px no-repeat  !important;
+    border:1px solid  rgb(162, 180, 238) !important;
+    border-color:rgba(162, 180, 238, 0.8) !important;
+    -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(162, 180, 238, 0.6) !important;
+    -moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(162, 180, 238, 0.6) !important;
+    box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(162, 180, 238, 0.6) !important;
+    color: #585b66 !important;
+    padding-left:36px !important;    
+}
+
+.notify-success {
+    background: #d5ffce url('./icons/success.png') 10px 9px no-repeat  !important;
+    border:1px solid rgb(154, 223, 143) !important;
+    border-color:rgba(154, 223, 143, 0.8) !important;
+    -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(154, 223, 143, 0.6) !important;
+    -moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(154, 223, 143, 0.6) !important;
+    box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(154, 223, 143, 0.6) !important;
+    color: #556652 !important;
+    padding-left:36px !important;    
+}
+
+.notify-error {
+    background: #ffcece url('./icons/error.png') 10px 9px no-repeat  !important;
+    border:1px solid rgb(223, 143, 143) !important;
+    border-color:rgba(223, 143, 143, 0.8) !important;
+    -webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(223, 143, 143, 0.6) !important;
+    -moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(223, 143, 143, 0.6) !important;
+    box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(223, 143, 143, 0.6) !important;
+    color: #665252 !important;
+    padding-left:36px !important;
+}

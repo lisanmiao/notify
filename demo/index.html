@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>Notify Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.2.1.min.js"></script>
+
+    <link href="../dist/notify/notify-1.0.min.css" rel="stylesheet" type="text/css" />
+    <script src='../dist/notify/notify-1.0.min.js' type='text/javascript'></script>
+
+</head>
+<h1>The Notify Plugin Documentation</h1>
+<ol>
+    <li><a href='#installation'>Installation</a></li>
+    <li><a href='#demos'>Demos</a></li>
+    <li><a href='#download'>Download</a></li>
+</ol>
+
+<h2 id='installation'>1. Installation</h2>
+<h3>1.1 require jQury</h3>
+<pre>    &lt;script src="./path/to/jquery-version.min.js">&lt;/script> (version > 1.0)</pre>
+<h3>1.2 require notify js</h3>
+<pre>    &lt;script src='../path/to/notify/notify-1.0.min.js' type='text/javascript'>&lt;/script>
+    <br>
+    or
+    <br> 
+    &lt;script src='../path/to/notify/notify-1.0.js' type='text/javascript'>&lt;/script></pre>
+<h3>1.3 require notify css</h3>
+<pre>    &lt;link href="../path/to/notify/notify-1.0.css" rel="stylesheet" type="text/css" />
+    <br>
+    or
+    <br> 
+    &lt;link href="../path/to/notify/notify-1.0.min.css" rel="stylesheet" type="text/css" /></pre>
+<h2 id='demos'>2. This is demo for notify.</h2>
+<h3>2.1 Default Notify</h3>
+<div>
+    <pre>    $.notify("default notify, with cover and loading, 3s", 3000, "", true, true);</pre>
+    <a href="javascript:void(0);" id="show-default-notify-for-3-seconds">Click to Show Default Notify For 3 Seconds</a>
+</div>
+<div>
+    <pre>    $.notify("default notify, without cover, with loading, 3s", 3000, "", false, true);</pre>
+    <a href="javascript:void(0);" id="show-default-notify-without-cover-for-3-seconds">Click to Show Default Notify Without Cover For 3 Seconds</a>
+</div>
+<div>
+    <pre>    $.notify("default notify, with cover, without loading, 3s", 3000, "", true, false);</pre>
+    <a href="javascript:void(0);" id="show-default-notify-without-loading-for-3-seconds">Click to Show Default Notify Without Loading For 3 Seconds</a>
+</div>
+<div>
+    <pre>    $.notify("default notify, without cover and loading, 3s", 3000, "", false, false);</pre>
+    <a href="javascript:void(0);" id="show-default-notify-without-cover-and-loading-for-3-seconds">Click to Show Default Notify Without Cover and Loading For 3 Seconds</a>
+</div>
+<div>
+    <pre>    $.notify("loading default notify forever until next notify", -1, "", true, true);
+    setTimeout(function() {
+        $.notify("next default notify comes, the notify before hide", 3000, "", true, false);
+    }, 10000);</pre>
+    <a href="javascript:void(0);" id="show-default-notify-always">Click to Show Default Notify Always Until Next Notify</a>
+</div>
+<h3>2.2 Success Notify</h3>
+<div>
+    <pre>    $.notify("success notify, with cover, without loading, 3s", 3000, "success", true, false);</pre>
+    <a href="javascript:void(0);" id="show-success-notify-without-loading-for-3-seconds">Click to Show Success Notify Without Loading For 3 Seconds</a>
+</div>
+<div>
+    <pre>    $.notify("success notify, without cover and loading, 3s", 3000, "success", false, false);</pre>
+    <a href="javascript:void(0);" id="show-success-notify-without-cover-and-loading-for-3-seconds">Click to Show Success Notify Without Cover and Loading For 3 Seconds</a>
+</div>
+<h3>2.3 Information Notify</h3>
+<div>
+    <pre>    $.notify("information notify, with cover, without loading, 3s", 3000, "information", true, false);</pre>
+    <a href="javascript:void(0);" id="show-information-notify-without-loading-for-3-seconds">Click to Show Information Notify Without Loading For 3 Seconds</a>
+</div>
+<div>
+    <pre>    $.notify("information notify, without cover and loading, 3s", 3000, "information", false, false);</pre>
+    <a href="javascript:void(0);" id="show-information-notify-without-cover-and-loading-for-3-seconds">Click to Show Information Notify Without Cover and Loading For 3 Seconds</a>
+</div>
+<h3>2.4 Attention Notify</h3>
+<div>
+    <pre>    $.notify("attention notify, with cover, without loading, 3s", 3000, "attention", true, false);</pre>
+    <a href="javascript:void(0);" id="show-attention-notify-without-loading-for-3-seconds">Click to Show Attention Notify Without Loading For 3 Seconds</a>
+</div>
+<div>
+    <pre>    $.notify("attention notify, without cover and loading, 3s", 3000, "attention", false, false);</pre>
+    <a href="javascript:void(0);" id="show-attention-notify-without-cover-and-loading-for-3-seconds">Click to Show Attention Notify Without Cover and Loading For 3 Seconds</a>
+</div>
+<h3>2.5 Error Notify</h3>
+<div>
+    <pre>    $.notify("error notify, with cover, without loading, 3s", 3000, "error", true, false);</pre>
+    <a href="javascript:void(0);" id="show-error-notify-without-loading-for-3-seconds">Click to Show Error Notify Without Loading For 3 Seconds</a>
+</div>
+<div>
+    <pre>    $.notify("error notify, without cover and loading, 3s", 3000, "error", false, false);</pre>
+    <a href="javascript:void(0);" id="show-error-notify-without-cover-and-loading-for-3-seconds">Click to Show Error Notify Without Cover and Loading For 3 Seconds</a>
+</div>
+<h2 id='download'>3. Download</h2>
+<h3>3.1 Github</h3>
+<div>
+    <pre>    http://www.github.com/lisanmiao/notify</pre>
+</div>
+<script src='./demo.js' type='text/javascript'></script>
+<style type='text/css'>
+    pre {
+        background-color: #f7f7f9;
+        color: #424b50;
+        border-left: 8px solid #c3cace;
+        padding: 16px 0;
+    }
+</style>
+
+
